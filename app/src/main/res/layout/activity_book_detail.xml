@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookDetailActivity"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimaryDark">
+        <TextView
+            android:id="@+id/tv_detail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Name"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginRight="8dp"
+        app:cardCornerRadius="16dp"
+        android:layout_below="@id/tool_bar"
+        android:layout_toRightOf="@id/img_card"
+        android:layout_marginTop="112dp"
+        android:layout_marginLeft="-30dp"
+        app:cardBackgroundColor="#210E4C">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:id="@+id/tv_detail_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:lineSpacingExtra="4dp"
+                android:textColor="@android:color/white"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/img_card"
+        app:cardBackgroundColor="#312749"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/tool_bar"
+        app:cardCornerRadius="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:id="@+id/img_detail_book"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+    </androidx.cardview.widget.CardView>
+    
+
+
+    <TextView
+        android:id="@+id/tv_detail_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_card"
+        android:layout_margin="8dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:text="author"/>
+
+    <TextView
+        android:id="@+id/tv_detail_genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_detail_published"
+        android:layout_margin="8dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:text="genre"/>
+
+    <TextView
+        android:id="@+id/tv_detail_published"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_detail_author"
+        android:layout_margin="8dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:text="published"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_below="@id/img_card"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_money"/>
+
+        <TextView
+            android:id="@+id/tv_detail_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:text="25.31"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
