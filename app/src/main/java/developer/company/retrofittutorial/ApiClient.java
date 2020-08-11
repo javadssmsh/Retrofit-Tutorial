@@ -11,17 +11,17 @@ public class ApiClient {
 
     public static Retrofit getApiClient(String url){
 
-        HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
+/*        HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
         interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
         OkHttpClient client = new OkHttpClient.Builder()
                 .addInterceptor(interceptor)
-                .build();
+                .build();*/
 
         if (retrofit ==null){
              retrofit = new Retrofit.Builder()
                      .baseUrl(url)
                      .addConverterFactory(GsonConverterFactory.create())
-                     .client(client)
+                     //.client(client)
                      .build();
         }
         return retrofit;

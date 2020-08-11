@@ -18,4 +18,9 @@ public interface ApiInterface {
                                 @Query("phone") String phone,
                                 @Query("password") String password);
 
+
+    @GET("login.php")
+    Call<Users> loginAccount(@Query("email") String email,
+                             @Query("password") String password);
+
 }
