@@ -6,14 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity"
-    android:background="@color/colorPrimary">
+    android:background="@color/icons">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
         android:textStyle="bold"
-        android:textColor="@android:color/white"
+        android:textColor="@color/primary_text"
         android:textSize="18sp"
         android:layout_marginTop="64dp"
         android:layout_marginLeft="24dp"/>
@@ -31,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
-            android:textColorHint="@android:color/white"
+            android:textColorHint="@color/accent"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_marginTop="8dp">
 
@@ -41,6 +41,7 @@
                 android:layout_height="50dp"
                 android:textSize="15sp"
                 android:textStyle="bold"
+                android:textColor="@color/primary_text"
                 android:inputType="textEmailAddress"
                 android:padding="16dp"/>
 
@@ -50,7 +51,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
-            android:textColorHint="@android:color/white"
+            android:textColorHint="@color/accent"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_marginTop="8dp">
 
@@ -60,6 +61,7 @@
                 android:layout_height="50dp"
                 android:textSize="15sp"
                 android:textStyle="bold"
+                android:textColor="@color/primary_text"
                 android:inputType="textPassword"
                 android:padding="16dp"/>
 
@@ -77,7 +79,7 @@
         android:layout_marginTop="16dp"
         android:textAllCaps="false"
         android:background="@drawable/bg_btn"
-        android:textColor="@color/colorPrimary"/>
+        android:textColor="@color/primary_text"/>
 
     <TextView
         android:id="@+id/txt_register"
@@ -86,7 +88,7 @@
         android:text="No account? , Register"
         android:textSize="13sp"
         android:textStyle="bold"
-        android:textColor="@android:color/white"
+        android:textColor="@color/primary_text"
         android:layout_below="@id/layout_register"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="8dp"/>

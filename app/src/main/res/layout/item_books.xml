@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="8dp"
-    android:background="@color/colorPrimary">
+    android:background="@color/icons">
 
 
     <androidx.cardview.widget.CardView
@@ -13,7 +13,7 @@
         android:layout_toRightOf="@id/card_img"
         android:layout_marginTop="15dp"
         android:layout_marginLeft="-36dp"
-        app:cardBackgroundColor="#210E4C"
+        app:cardBackgroundColor="@color/divider"
         app:cardCornerRadius="16dp"
         android:elevation="-5dp">
 
@@ -34,7 +34,7 @@
                     android:text="name"
                     android:textStyle="bold"
                     android:textSize="20sp"
-                    android:textColor="@android:color/white"
+                    android:textColor="@color/primary_text"
                     android:layout_marginTop="4dp"
                     />
 
@@ -43,8 +43,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="author"
-                    android:textColor="@android:color/white"
-                    android:textSize="18sp"
+                    android:textColor="@color/primary_text"
+                    android:textSize="16sp"
                     android:layout_marginTop="10dp"
                     />
 
@@ -71,7 +71,7 @@
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:layout_gravity="center"
-                    android:textColor="@android:color/white"
+                    android:textColor="@color/primary_text"
                     android:text="25.31"/>
 
 
@@ -86,7 +86,7 @@
         android:layout_width="95dp"
         android:layout_height="135dp"
         app:cardCornerRadius="16dp"
-        app:cardBackgroundColor="#312749"
+        app:cardBackgroundColor="@color/divider"
         android:elevation="5dp">
 
         <ImageView
