@@ -1,6 +1,6 @@
 # Retrofit-Tutorial
 
-GET and POST methods using javad.
+GET and POST methods using java.
 The php files are in the "retrofit(php)" folder. Use Xampp for running your web server.
 
 
